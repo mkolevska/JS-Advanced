@@ -1,0 +1,62 @@
+#home-page{
+    text-align: center;
+}
+#temperature{
+    text-align: center;
+    background: pink;
+    width: 35% ;
+    margin: auto;
+    padding: 10px;
+
+}
+
+body{
+    background-image: url("weather.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(253, 8, 8);
+
+}
+#nav-bar{
+    opacity: 95%;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    
+    
+    
+}
+button{
+    background-color: yellow;
+}
+
+
+button:focus{
+    background-color: midnightblue;
+    
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.image{
+
+    display: inline;
+}
+li{
+   list-style-type: none;
+}
+
+#table-body, th,td {
+    border: 1px solid black;
+}
+
+
+

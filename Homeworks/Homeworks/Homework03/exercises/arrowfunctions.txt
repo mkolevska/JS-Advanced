@@ -1,0 +1,62 @@
+// 1.
+
+let numberOfDigits = num => {
+    let numToString = num.toString();
+    console.log(numToString.length)
+    return numToString.length;
+}
+
+// console.log(numberOfDigits(334455));
+
+
+function numberOfDigits2 (x){
+      if(x < 10){
+          return 1;
+      }
+      else {
+          return numberOfDigits2(x / 10) + 1;
+      }
+}
+
+// console.log(numberOfDigits2(345));
+
+//2.
+
+let evenOrOdd = num => {
+    if (num % 2 == 0){
+        console.log("The number is even");
+        return 0;
+    }
+    else{
+        console.log("The number is odd");
+        return 1;
+    }
+    
+}
+// evenOrOdd(3);
+
+// 3.
+
+let positiveOrNegative = num =>{
+    if(num > 0){
+        console.log("Positive");
+        return 0;
+    }
+    else{
+        console.log("Negative");
+        return 1;
+    }
+
+}
+// positiveOrNegative(-12);
+
+
+
+function resultOfThreeFunctions(num,){
+    let text  = `${numberOfDigits(num)} + ${evenOrOdd(num)} + ${positiveOrNegative(num)}`;
+          return text;
+}
+
+resultOfThreeFunctions(555);
+
+

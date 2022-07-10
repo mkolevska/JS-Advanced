@@ -1,0 +1,32 @@
+let h1 = document.getElementById("h1");
+
+let colorChange = (text,color) => {
+    let colorLength = color.length;
+ if(colorLength == 0){
+ return text.style.color = "black";
+ }
+ else{
+   return text.style.color = color;
+ }
+}
+
+let fontChange = (text,size) => {
+    let lengthSize = size.length;
+ if(lengthSize == 0){
+    return text.style.fontSize = "20px" ;
+ }
+ else{
+    return text.style.fontSize = size ;
+ }
+}
+
+
+
+document.getElementById('button').addEventListener("click", () =>{
+    let input1 = document.getElementById("font-size").value;
+    let input2 = document.getElementById("color-change").value;
+    colorChange(h1,input2);
+    fontChange(h1,input1);
+  
+    
+})

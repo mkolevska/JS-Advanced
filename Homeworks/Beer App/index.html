@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Beer Shop</title>
+</head>
+
+<body>
+    <div id="container">
+     <nav id="nav-bar">
+        <a id="beer-bar">Beer Bar</a>
+        <a id="beers">Beers</a>
+        <a id="random-beer">Random Beer</a>
+        <div id="search-div">
+            <input placeholder="Search" id="search">
+            <button id="search-btn">Search</button>
+        </div>
+    </nav><br><br></div>
+    <div id="main-div" >
+        <h1>Hello, This is beer world!</h1>
+        <h2>This is simple beer page you can get all informations for beers here </h2>
+        <img src="HomepageImage.png" id="home-page-image">
+    </div>
+    <div id="beer-bar-main" hidden>
+        <div id="selecting-menu">
+        <select id="select-page">
+            <option value="&per_page=5" hidden>Page Size</option>
+            <option id="show-5" value="5" >show 5</option>
+            <option id="show-10" value="10">show 10</option>
+            <option id="show-20" value="20">show 20</option>
+        </select>
+        <select id="sort-by">
+            <option value="A-Z" hidden>Sort By</option>
+            <option id="name-ab" value="A-Z" >A-Z</option>
+            <option id="name-des" value="Z-A" >Z-A</option>
+            <option id="percentage-ab" value="abv-low-to-high">% alc(absc)</option>
+            <option id="percentage-des" value="abv-high-to-low">% alc(desc)</option>
+            <option id="biterness-ab" value="ibu-low-to-high">biterness(absc)</option>
+            <option id="biterness-des" value="ibu-high-to-low">biterness(desc)</option>
+            <option id="first" value="first-brewed">first-brewed</option>
+        </select><br><br></div>
+        <div id="show-page-number"></div>
+        <div id="show-beers">
+            <div id="div-for-beer-bar-buttons"></div>
+        </div>
+        <div id="change-pages">
+         <button id="previous-btn">Previous</button>
+         <button id="next-btn">Next</button>
+         </div>
+        </div>
+
+    <div id="beers-main">
+    </div>
+    <div id="random-beer-main" hidden>
+        <div id="random-beer-main-div"></div>
+
+    </div>
+    <div id="search-result"></div>
+ 
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

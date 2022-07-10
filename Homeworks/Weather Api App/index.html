@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="image" class="image"><img src = "5f48f20a68ecc70004ae6f73.png" width="100px" class="center"></div>
+        <button class="navigaton" id="home-main">Home</button>
+        <button class="navigation" id="hourly-weather-main">Hourly Weather</button>
+        <button class="navigation" id="choose-city">Custom City</button>
+        <button class="navigation" id="about-main">About</button>
+    </nav><br><br><br>
+    <div id="home-page" >
+    <h1>Welcome to Weather</h1>
+    <strong><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo quidem aut, corporis aperiam similique vero quaerat fugiat, iste qui veritatis dolorum ducimus. Officia autem quam consectetur voluptatibus quasi vitae.</p></strong>
+   <strong><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam incidunt doloremque non porro, voluptas debitis aspernatur quae voluptatibus rerum repellat dolorem assumenda quis voluptates totam. Nostrum distinctio labore delectus.</p></strong> 
+    <!-- <strong id="city">Skopje,North Macedonia</strong> -->
+    <br><br>
+    <div id="temperature">
+        <strong><label for="text">Insert City Name :</label></strong>
+        <input type = "text" id="city-name-input">
+        <button id="show-temp-info">Show Info</button><br><br>
+        <div id="temperature-data">
+            <strong id="city-name"></strong><br><br>
+        <strong>Temperature</strong>
+        <ul>
+            <li id="highest"></li>
+            <li id="lowest"></li>
+            <li id="average"></li>
+        </ul>
+    <div id="humidity">
+        <strong>Humidity:</strong>
+        <ul>
+<li id="humidity-in-air"> </li>
+        </ul>
+    </div>
+    <div id="air-pressure">
+        <strong>Air Pressure:</strong>
+        <ul>
+            <li id="pressure"></li>
+        </ul>
+         </div>
+         </div>
+         </div>
+    </div>
+
+    <div id="hourly-weather" >
+    <table id="table-body">
+        <thead>
+            <th>Icon</th>
+            <th>Description</th>
+            <th>Date and Time</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+        </thead>
+    </table>
+    </div>
+    <div id="custom-report">
+        <strong><label for="text">Insert City Name :</label></strong>
+        <input type = "text" id="city-name-custom"><br><br>
+        <label for="choose-language">Please select language</label>
+        <select id="choose-language">
+            <option value="en">English</option>
+            <option value="mk">Macedonian</option>
+            <option value="fr">French</option>
+        </select><br><br>
+        <label for="choose-metric">Please select metric</label>
+        <select id="choose-metric">
+        <option value="standard">Kelvin</option>
+        <option value="metric">Celsius</option>
+        <option value="imperial">Fahrenheit</option>
+        </select><br><br>
+        <button id="get-information">Weather Info</button><br><br>
+
+    </div>
+    <div id="about" >
+        <p>This is a wather application,we always have the most accurate informations about the weather</p>
+        <strong>You can contact us on the next email adress:</strong>
+        <p>Cretor of this page is : Marija Kolevska</p>
+     
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WorkShop</title>
+</head>
+<body>
+    <div id="loader" hidden>
+        <div id="loading"></div>
+    </div>
+  <div id="main-container">
+     <trong> <label for="city-name">Please Enter Contry:</label></strong><br><br>
+      <input placeholder="Enter Contry Name" type="text" id="city-name"><br><br>
+      <button id="search-city">Search</button>
+  </div>
+  <div id="result">
+      <select id="select-how-to-order">
+          <option hidden  id="sort-by">Sort By</option>
+          <option value="A-Z" id="name">Name</option>
+          <option value="population" id="population">Population</option>
+          <option value="area" id="area-size">Area</option>
+      </select>
+      <br><br>
+    <table id="table-body">
+    </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
